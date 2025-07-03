@@ -410,61 +410,6 @@ li {
   line-height: 1.7;
 }
 
-/* ===== RECRUIT ===== */
-#recruit {
-  padding: 12em;
-}
-
-.big {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: #ccc;
-}
-
-.r-left {
-  position: absolute;
-  top: 50%;
-  left: -7%;
-  transform: translateY(-50%);
-  width: 50%;
-  text-align: center;
-}
-
-.recruit-title {
-  font-size: 2em;
-}
-
-.recruit-ja {
-  font-size: 0.9em;
-  margin-bottom: 1em;
-}
-
-.r-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.r-right img {
-  width: 60%;
-}
-
-.recruit-btn {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.8em 1.5em;
-  background: #61005e;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-  width: 180px;
-  margin-top: 5em;
-  text-align: center;
-}
-
 /* ===== CONTACT ===== */
 #contact {
   padding: 5em 18em;
@@ -555,7 +500,8 @@ small {
   }
 
   #header {
-    height: 100px;
+    height: auto;
+    padding: 1em 0;
   }
 
   #mainview {
@@ -563,36 +509,44 @@ small {
   }
 
   .mv-image-area {
-    height: 40vh;
+    height: 50vh;
   }
 
   .main-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .mv-content-area {
-    top: 30%;
+    top: 40%;
   }
 
   .main-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .menu-list ul {
-    gap: 1em;
+    gap: 0.8em;
   }
 
   .footer-list {
-    gap: 1.5em;
+    gap: 1.2em;
   }
 
-  .r-left, .r-right {
-    width: 48%;
+  .footer-list li a {
+    font-size: 0.9em;
   }
 
   #news {
-    margin: 1em auto auto;
-    padding: 0 2em;
+    margin: 3em auto;
+    padding: 2em;
+  }
+
+  #service {
+    padding: 3em 2em;
+  }
+
+  .sv-list {
+    gap: 2em;
   }
 
   .work-container {
@@ -601,7 +555,11 @@ small {
   }
 
   .work-text-area h2 {
-    font-size: 1.8em;
+    font-size: 2em;
+  }
+
+  #company {
+    padding: 3em 2em;
   }
 
   .company-container {
@@ -611,59 +569,15 @@ small {
   .company-content {
     padding: 2em;
     max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   .dream {
-    font-size: 1.8em;
-  }
-
-  .company-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 2em;
-    max-width: 90%;
-  }
-
-  #recruit {
-    padding: 5em;
-  }
-
-  .big {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #ccc;
-  }
-
-  .r-left, .r-right {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-  }
-
-  .r-right img {
-    width: 100%;
-    height: auto;
-  }
-
-  .r-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    padding-top: 2em;
-  }
-
-  .recruit-btn {
-    margin-bottom: 2em;
+    font-size: 2em;
   }
 
   #contact {
-    padding: 5em;
+    padding: 3em 2em;
   }
 
   .contact-frame {
@@ -671,29 +585,170 @@ small {
   }
 
   #footer {
-    height: 18vh;
+    padding: 2em 0;
+    height: auto;
+  }
+
+  /* 専用ページのスタイル調整 */
+  .breadcrumb {
+    padding: 1.5em 2em 0.5em;
+  }
+
+  .page-header {
+    padding: 3em 0;
+  }
+
+  .page-title {
+    font-size: 2.2em;
+  }
+
+  .news-list {
+    padding: 3em 2em;
+  }
+
+  .news-item {
+    padding: 1.5em;
+  }
+
+  /* サービスページ */
+  .service-intro {
+    padding: 3em 0;
+  }
+
+  .service-intro-container {
+    padding: 0 2em;
+  }
+
+  .service-main {
+    padding: 4em 0;
+  }
+
+  .service-container {
+    padding: 0 2em;
+  }
+
+  .service-item {
+    flex-direction: column !important;
+    gap: 2em;
+    padding: 2em;
+  }
+
+  .service-image {
+    width: 100%;
+  }
+
+  .service-image img {
+    height: 250px;
+  }
+
+  .service-flow {
+    padding: 4em 0;
+  }
+
+  .flow-steps {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* ワークページ */
+  .works-list {
+    padding: 4em 0;
+  }
+
+  .works-list-container {
+    padding: 0 2em;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+  }
+
+  .works-list + #contact {
+    padding: 3em 2em;
+  }
+
+  .works-list + #contact .contact-frame {
+    padding: 2em 1.5em;
+  }
+
+  .works-list + #contact .contact-title {
+    font-size: 2em;
+  }
+
+  .works-list + #contact .contact-text {
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+
+  .works-list + #contact .contact-btn {
+    font-size: 1em;
+    padding: 0.8em 2em;
+  }
+
+  /* アバウトページ */
+  .about-profile {
+    padding: 4em 0;
+  }
+
+  .about-profile-container {
+    flex-direction: column;
+    gap: 3em;
+    padding: 0 2em;
+  }
+
+  .profile-image {
+    flex: none;
+    align-self: center;
+  }
+
+  .about-motivation,
+  .about-skills,
+  .about-lifestyle {
+    padding: 4em 0;
+  }
+
+  .about-motivation-container,
+  .about-skills-container,
+  .about-lifestyle-container {
+    padding: 0 2em;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
 /* スマートフォン用（最大幅: 640px） */
 @media screen and (max-width: 640px) {
   body {
-    font-size: 70%;
+    font-size: 100%;
   }
 
   #header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(133, 133, 133, 0.9);
-    padding: 1em 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.5em 0;
     height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
     padding: 0 1em;
+    font-size: 1.2em;
+  }
+
+  .logo .site-title a {
+    color: #fff;
   }
 
   .menu-list {
@@ -705,59 +760,84 @@ small {
 
   .menu-list ul {
     flex-direction: row;
-    gap: 0.5em;
+    gap: 0.8em;
     align-items: center;
     flex-wrap: wrap;
   }
 
   .menu-list li a {
-    color: #333;
-    margin-right: 1em;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 0.5em;
   }
 
   #mainview {
-    margin-top: 80px;
-    min-height: 25vh;
+    margin-top: 70px;
+    min-height: 50vh;
   }
 
   .mv-image-area {
-    height: 40vh;
+    height: 50vh;
   }
 
   .main-title {
-    font-size: 2.5em;
+    font-size: 2em;
+    white-space: normal;
+    line-height: 1.2;
   }
 
   .main-text {
-    font-size: 1.5em;
+    font-size: 1em;
+    white-space: normal;
+    line-height: 1.4;
   }
 
   .mv-btn {
-    font-size: 1.5em;
+    font-size: 1em;
+    padding: 0.8em 1.5em;
   }
 
   #news {
     display: block;
-    margin: 2em 0 10em;
-    padding: 0 1em;
+    margin: 3em 0;
+    padding: 2em 1em;
   }
 
-  .ja {
+  .sec-title {
+    font-size: 2em;
+  }
+
+  .title-ja {
+    font-size: 1em;
     margin-bottom: 2em;
-  }
-
-  .sec-title-news {
-    font-size: 1.2em;
-    text-align: center;
   }
 
   #news dl {
     width: 100%;
-    text-align: center;
+    text-align: left;
+  }
+
+  #news dt {
+    float: none;
+    margin-bottom: 0.5em;
+    border-bottom: none;
+  }
+
+  #news dd {
+    margin-left: 0;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #service {
+    padding: 3em 1em;
+    margin-top: 2em;
   }
 
   .sv-list {
     flex-direction: column;
+    gap: 2em;
   }
 
   .sv-img {
@@ -766,20 +846,23 @@ small {
 
   .sv-img h3 {
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 1.3em;
   }
 
   .sv-img p {
-    font-size: 1.8em;
+    font-size: 1em;
+    line-height: 1.6;
   }
 
   .sv-btn {
-    height: 5em;
+    height: 3em;
     margin-top: 1em;
+    width: 100%;
+    max-width: 250px;
   }
 
   #work {
-    padding: 2em;
+    padding: 3em 1em;
   }
 
   .work-container {
@@ -788,76 +871,425 @@ small {
   }
 
   .work-text-area h2 {
-    font-size: 2.2em;
-    margin-top: 1em;
+    font-size: 1.8em;
+    margin-top: 0;
   }
 
   .work-text {
-    font-size: 1.4em;
+    font-size: 1em;
+    line-height: 1.6;
   }
 
   .work-title-ja {
-    font-size: 1.3em;
+    font-size: 1em;
+  }
+
+  .sec-btn {
+    width: 100%;
+    max-width: 250px;
+    height: 3em;
   }
 
   #company {
-    padding: 2em;
-    margin-top: 3em;
-  }
-
-  .company-container {
-    min-height: 300px;
-  }
-
-  .company-content {
-    padding: 1.5em;
-    max-width: 95%;
-  }
-
-  .text-small {
-    font-size: 1.2em;
-  }
-
-  #recruit {
-    margin-top: 8em;
-  }
-
-  .contact-frame {
-    padding: 1em;
-  }
-  
-  #footer {
-    height: 8vh;
-  }
-}
-
-/* 超小型デバイス用（最大幅: 380px） */
-@media screen and (max-width: 380px) {
-  #news {
-    margin: 1em 0;
-    padding: 0 1em;
-  }
-
-  #work {
-    padding: 1em;
-  }
-
-  .work-text-area h2 {
-    font-size: 1.8em;
-  }
-
-  #company {
-    padding: 1em;
+    padding: 3em 1em;
     margin-top: 2em;
   }
 
   .company-container {
     min-height: 250px;
+    background-size: cover;
+  }
+
+  .company-content {
+    padding: 1.5em;
+    max-width: 95%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .c-title {
+    font-size: 1.5em;
+  }
+
+  .dream {
+    font-size: 1.8em;
+  }
+
+  .text-small {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .c-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  #contact {
+    padding: 3em 1em;
+  }
+
+  .contact-frame {
+    padding: 2em 1em;
+  }
+
+  .contact-title {
+    font-size: 2em;
+  }
+
+  .contact-ja {
+    font-size: 1em;
+  }
+
+  .contact-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  #footer {
+    padding: 2em 0;
+    height: auto;
+  }
+
+  .footer-list ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .footer-list li a {
+    font-size: 1em;
+    margin-left: 0;
+  }
+
+  /* 専用ページのスタイル調整 */
+  .breadcrumb {
+    padding: 1em;
+    margin-top: 70px;
+  }
+
+  .page-header {
+    padding: 2em 0;
+    margin-top: 0;
+  }
+
+  .page-title {
+    font-size: 1.8em;
+  }
+
+  .page-subtitle {
+    font-size: 1em;
+  }
+
+  /* ニュースページ */
+  .news-list {
+    padding: 2em 1em;
+  }
+
+  .news-item {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .news-title {
+    font-size: 1.2em;
+  }
+
+  /* サービスページ */
+  .service-intro {
+    padding: 2em 0;
+  }
+
+  .service-intro-title {
+    font-size: 1.8em;
+  }
+
+  .service-main {
+    padding: 3em 0;
+  }
+
+  .service-container {
+    padding: 0 1em;
+  }
+
+  .service-item {
+    padding: 1.5em;
+    margin-bottom: 3em;
+  }
+
+  .service-title {
+    font-size: 1.4em;
+  }
+
+  .service-flow {
+    padding: 3em 0;
+  }
+
+  .service-flow-title {
+    font-size: 1.8em;
+  }
+
+  /* ワークページ */
+  .works-list {
+    padding: 3em 0;
+  }
+
+  .works-list-title {
+    font-size: 1.8em;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 0 1em;
+  }
+
+  .work-image {
+    height: 200px;
+  }
+
+  .works-list + #contact {
+    padding: 3em 1em;
+  }
+
+  .works-list + #contact .contact-frame {
+    padding: 2em 1em;
+  }
+
+  .works-list + #contact .contact-title {
+    font-size: 1.8em;
+  }
+
+  .works-list + #contact .contact-ja {
+    font-size: 1em;
+  }
+
+  .works-list + #contact .contact-text {
+    font-size: 0.95em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+  }
+
+  .works-list + #contact .contact-btn {
+    font-size: 1em;
+    padding: 0.8em 1.8em;
+    width: auto;
+    min-width: 160px;
+  }
+
+  /* アバウトページ */
+  .about-profile {
+    padding: 3em 0;
+  }
+
+  .about-profile-container {
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1em;
+  }
+
+  .profile-image {
+    flex: none;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .profile-name {
+    font-size: 1.8em;
+  }
+
+  .about-motivation,
+  .about-skills,
+  .about-lifestyle {
+    padding: 3em 0;
+  }
+
+  .motivation-title,
+  .skills-title,
+  .lifestyle-title {
+    font-size: 1.8em;
+  }
+
+  .motivation-item {
+    padding: 1.5em;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}
+
+/* 超小型デバイス用（最大幅: 380px） */
+@media screen and (max-width: 380px) {
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .main-text {
+    font-size: 0.9em;
+  }
+
+  .mv-btn {
+    font-size: 0.9em;
+    padding: 0.6em 1.2em;
+  }
+
+  #news {
+    margin: 2em 0;
+    padding: 1em;
+  }
+
+  .sec-title {
+    font-size: 1.5em;
+  }
+
+  .title-ja {
+    font-size: 0.9em;
+  }
+
+  #service {
+    padding: 2em 0.5em;
+  }
+
+  .sv-img h3 {
+    font-size: 1.1em;
+  }
+
+  .sv-btn {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #work {
+    padding: 2em 0.5em;
+  }
+
+  .work-text-area h2 {
+    font-size: 1.5em;
+  }
+
+  .work-text {
+    font-size: 0.9em;
+  }
+
+  #company {
+    padding: 2em 0.5em;
+    margin-top: 1em;
+  }
+
+  .company-container {
+    min-height: 200px;
   }
 
   .company-content {
     padding: 1em;
     max-width: 98%;
+  }
+
+  .c-title {
+    font-size: 1.2em;
+  }
+
+  .dream {
+    font-size: 1.4em;
+  }
+
+  .text-small {
+    font-size: 0.9em;
+  }
+
+  #contact {
+    padding: 2em 0.5em;
+  }
+
+  .contact-title {
+    font-size: 1.5em;
+  }
+
+  .contact-text {
+    font-size: 0.9em;
+  }
+
+  /* 専用ページの調整 */
+  .breadcrumb {
+    padding: 0.5em;
+    font-size: 0.8em;
+  }
+
+  .page-title {
+    font-size: 1.5em;
+  }
+
+  .page-subtitle {
+    font-size: 0.9em;
+  }
+
+  .news-item {
+    padding: 1em;
+  }
+
+  .news-title {
+    font-size: 1.1em;
+  }
+
+  .service-intro-title {
+    font-size: 1.5em;
+  }
+
+  .service-title {
+    font-size: 1.2em;
+  }
+
+  .works-list-title {
+    font-size: 1.5em;
+  }
+
+  .works-list + #contact {
+    padding: 2em 0.5em;
+  }
+
+  .works-list + #contact .contact-frame {
+    padding: 1.5em 1em;
+  }
+
+  .works-list + #contact .contact-title {
+    font-size: 1.5em;
+  }
+
+  .works-list + #contact .contact-text {
+    font-size: 0.9em;
+  }
+
+  .works-list + #contact .contact-btn {
+    font-size: 0.9em;
+    padding: 0.7em 1.5em;
+    min-width: 140px;
+  }
+
+  .profile-name {
+    font-size: 1.5em;
+  }
+
+  .motivation-title,
+  .skills-title,
+  .lifestyle-title {
+    font-size: 1.5em;
+  }
+
+  .motivation-item {
+    padding: 1em;
+  }
+
+  .skill-category {
+    padding: 1em;
   }
 }
 
@@ -1911,52 +2343,63 @@ small {
 
 /* ===== WORK PAGE CONTACT SECTION ===== */
 .works-list + #contact {
-  padding: 5em 18em;
+  padding: 5em 2em;
   background-color: #f8f9fa;
 }
 
 .works-list + #contact .contact-frame {
   text-align: center;
-  background-color: #ccc;
-  padding: 1em 0;
+  background-color: #e9ecef;
+  padding: 3em 2em;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .works-list + #contact .contact-title {
   font-size: 2.5em;
   color: #333;
   margin-bottom: 0.5em;
+  font-weight: bold;
 }
 
 .works-list + #contact .contact-ja {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   color: #666;
+  font-size: 1.1em;
 }
 
 .works-list + #contact .contact-text {
-  margin-bottom: 3em;
-  color: #333;
-  line-height: 1.6;
+  margin-bottom: 2.5em;
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .works-list + #contact .contact-btn {
   display: inline-block;
-  margin-top: 1em;
-  padding: 0.8em 1.5em;
-  background: #61005e;
+  padding: 1em 2.5em;
+  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
   color: #fff;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 25px;
   font-weight: bold;
-  width: 180px;
+  font-size: 1.1em;
   text-align: center;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(97, 0, 94, 0.3);
 }
 
 .works-list + #contact .contact-btn:hover {
-  background: #9600d7;
+  background: linear-gradient(135deg, #9600d7 0%, #61005e 100%);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(97, 0, 94, 0.4);
 }
 
 .works-list + #contact .contact-btn a {
