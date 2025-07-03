@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKS - 制作実績 | JOHN DESIGN</title>
+    <meta name="description" content="JOHN DESIGNの制作実績をご紹介します。Webサイト制作、デザイン制作の事例をご覧ください。">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><h1 class="site-title"><a href="index.html">JOHN DESIGN</a></h1></div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#news">NEWS</a></li>
+                <li><a href="index.html#service">SERVICE</a></li>
+                <li><a href="index.html#work">WORKS</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="mainview">
+        <div class="mv-image-area">
+            <img src="img/名称未設定 1.png" alt="">
+        </div>
+        <div class="mv-content-area">
+            <h1 class="main-title">WORKS</h1>
+            <p class="main-text">制作実績</p>
+            <button class="mv-btn"><a href="#contact">CONTACT</a></button>
+        </div>
+    </div>
+
+    <main>
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li>WORKS</li>
+            </ul>
+        </nav>
+
+        <!-- 制作実績一覧セクション -->
+        <section class="works-list">
+            <div class="works-list-container">
+                <h2 class="works-list-title">制作実績</h2>
+                <p class="works-list-description">
+                    これまでに手がけたWebサイト制作やデザイン制作の事例をご紹介します。<br>
+                    お客様のご要望に合わせて、最適なソリューションをご提案いたします。
+                </p>
+
+                <!-- カテゴリーフィルター -->
+                <div class="works-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="website">Webサイト</button>
+                    <button class="filter-btn" data-category="design">デザイン</button>
+                    <button class="filter-btn" data-category="app">アプリ</button>
+                </div>
+
+                <!-- 制作実績一覧 -->
+                <div class="works-grid">
+                    <!-- 実績アイテム1 -->
+                    <div class="work-item" data-category="website">
+                        <div class="work-image">
+                            <img src="img/スクリーンショット 2025-06-13 130231.png" alt="企業サイト制作事例">
+                            <div class="work-overlay">
+                                <div class="work-overlay-content">
+                                    <h3>大学のHP</h3>
+                                    <p>更新頻度を考えたHP</p>
+                                    <a href="https://jooohn30.com/university/" target="_blank" class="work-detail-btn">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">コーポレートサイト制作</h3>
+                            <p class="work-category">Website</p>
+                            <p class="work-date">2025.5.20</p>
+                            <a href="https://jooohn30.com/university/" target="_blank" class="work-link">サイトを見る</a>
+                        </div>
+                    </div>
+
+                    <!-- 実績アイテム2 -->
+                    <div class="work-item" data-category="design">
+                        <div class="work-image">
+                            <img src="img/AdobeStock_220486868.jpg" alt="ブランディングデザイン事例">
+                            <div class="work-overlay">
+                                <div class="work-overlay-content">
+                                    <h3>ブランディングデザイン</h3>
+                                    <p>企業のアイデンティティを形にする</p>
+                                    <a href="https://example-branding.com" target="_blank" class="work-detail-btn">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">ブランディングデザイン</h3>
+                            <p class="work-category">Design</p>
+                            <p class="work-date">2024.02</p>
+                            <a href="https://example-branding.com" target="_blank" class="work-link">作品を見る</a>
+                        </div>
+                    </div>
+
+                    <!-- 実績アイテム3 -->
+                    <div class="work-item" data-category="website">
+                        <div class="work-image">
+                            <img src="img/AdobeStock_366186684.jpg" alt="ECサイト制作事例">
+                            <div class="work-overlay">
+                                <div class="work-overlay-content">
+                                    <h3>ECサイト制作</h3>
+                                    <p>売上向上を実現するサイト設計</p>
+                                    <button class="work-detail-btn">詳細を見る</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">ECサイト制作</h3>
+                            <p class="work-category">Website</p>
+                            <p class="work-date">2024.03</p>
+                        </div>
+                    </div>
+
+                    <!-- 実績アイテム4 -->
+                    <div class="work-item" data-category="app">
+                        <div class="work-image">
+                            <img src="img/AdobeStock_416854970.jpg" alt="モバイルアプリ制作事例">
+                            <div class="work-overlay">
+                                <div class="work-overlay-content">
+                                    <h3>モバイルアプリ</h3>
+                                    <p>使いやすさを追求したUX設計</p>
+                                    <a href="https://example-app.com" target="_blank" class="work-detail-btn">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">モバイルアプリ制作</h3>
+                            <p class="work-category">App</p>
+                            <p class="work-date">2024.04</p>
+                            <a href="https://example-app.com" target="_blank" class="work-link">アプリを見る</a>
+                        </div>
+                    </div>
+
+                    <!-- 実績アイテム5 -->
+                    <div class="work-item" data-category="design">
+                        <div class="work-image">
+                            <img src="img/company.jpg" alt="パンフレットデザイン事例">
+                            <div class="work-overlay">
+                                <div class="work-overlay-content">
+                                    <h3>パンフレットデザイン</h3>
+                                    <p>印象に残る紙媒体デザイン</p>
+                                    <a href="https://example-brochure.com" target="_blank" class="work-detail-btn">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">パンフレットデザイン</h3>
+                            <p class="work-category">Design</p>
+                            <p class="work-date">2024.05</p>
+                            <a href="https://example-brochure.com" target="_blank" class="work-link">作品を見る</a>
+                        </div>
+                    </div>
+
+                    <!-- 実績アイテム6 -->
+                    <div class="work-item" data-category="website">
+                        <div class="work-image">
+                            <img src="img/recruit1.jpg" alt="採用サイト制作事例">
+                            <div class="work-overlay">
+                                <div class="work-overlay-content">
+                                    <h3>採用サイト制作</h3>
+                                    <p>人材獲得を支援するサイト</p>
+                                    <a href="https://example-recruit.com" target="_blank" class="work-detail-btn">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">採用サイト制作</h3>
+                            <p class="work-category">Website</p>
+                            <p class="work-date">2024.06</p>
+                            <a href="https://example-recruit.com" target="_blank" class="work-link">サイトを見る</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ページネーション -->
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next">次へ</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTセクション -->
+        <section id="contact">
+            <div class="contact-frame">
+                <h2 class="contact-title">CONTACT</h2>
+                <p class="contact-ja">お問い合わせ</p>
+                <p class="contact-text">
+                    Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+                </p>
+                <a class="contact-btn" href="index.html#contact">MORE</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-home">
+            <a href="index.html" class="home-btn">HOME</a>
+        </div>
+        <p>&copy; 2024 JOHN DESIGN. All rights reserved.</p>
+    </footer>
+</body>
+</html>
