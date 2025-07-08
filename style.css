@@ -192,7 +192,7 @@ li {
   right: -300px;
   width: 300px;
   height: 100%;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   z-index: 1000;
   padding-top: 80px;
   transition: right 0.3s ease;
@@ -290,7 +290,7 @@ li {
 
 .mv-content-area {
   position: absolute;
-  top: 60%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -311,6 +311,29 @@ li {
   text-shadow: 0 2px 8px rgba(0,0,0,0.7);
   white-space: nowrap;
   margin-bottom: 2rem;
+}
+
+.main-text .filter {
+  filter: blur(2px);
+  opacity: 0.5;
+  font-size: 1.8rem;
+}
+
+.main-text .default {
+  font-size: 1.8rem;
+}
+
+/* すべてのページのメインビューに適用される共通スタイル */
+.mv-content-area .main-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.mv-content-area .main-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 .mv-btn {
@@ -347,7 +370,10 @@ li {
   color: #000;
   z-index: 100;
   position: relative;
+  flex-direction: column;
 }
+
+
 
 #news dl {
   width: 50%;
@@ -404,33 +430,33 @@ li {
 
 .sec-title {
   font-size: 3em;
-  color: #8e44ad;
+  color: #4a871c;
 }
 
 .news-en {
   font-size: 2.5em;
-  color: #9b59b6;
+  color: #4a871c;
 }
 
 .work-title {
-  color: #8e44ad;
+  color: #4a871c;
 }
 
 .c-title {
   font-size: 2em;
-  color: #9b59b6;
+  color: #4a871c;
 }
 
 .recruit-title {
   font-size: 2.2em;
   margin-bottom: 0.5em;
-  color: #8e44ad;
+  color: #4a871c;
   font-weight: bold;
 }
 
 .contact-title {
   font-size: 2.5em;
-  color: #9b59b6;
+  color: #4a871c;
 }
 
 .title-ja {
@@ -457,14 +483,14 @@ li {
 .sv-btn {
   margin: 2em auto;
   text-align: center;
-  border: 1px solid #9600d7;
+  border: 1px solid #4a871c;
   border-radius: 20px;
   width: 220px;
   height: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
 }
 
 .sv-btn a {
@@ -475,7 +501,7 @@ li {
 /* ===== WORK ===== */
 #work {
   padding: 5em;
-   background: linear-gradient(90deg, #ffffff 0%, #ffffff 30%, #cccccc 30% 30%,  #cccccc 100%);
+   background: linear-gradient(130deg, #ffffff 15%, #ffffff 30%, #69ab24 99% 100%);
     margin-right: 5em;
 }
 
@@ -523,14 +549,14 @@ li {
 .sec-btn {
   margin: 2em auto;
   text-align: center;
-  border: 1px solid #9600d7;
+  border: 1px solid #4a871c;
   border-radius: 20px;
   width: 180px;
   height: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: #fff;
   font-weight: bold;
 }
@@ -573,7 +599,7 @@ li {
   display: inline-block;
   margin-top: 1em;
   padding: 0.8em 1.5em;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -597,16 +623,10 @@ li {
   position: relative;
 }
 
-.dream::after {
-  content: '';
-  position: absolute;
-  bottom: -7px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  height: 13px;
-  background-color: yellow;
-  border-radius: 13px;
+.dream {
+  background-color: rgba(255, 255, 0, 0.3);
+  padding: 0.2em 0.5em;
+  border-radius: 8px;
 }
 
 .dream-break {
@@ -687,20 +707,20 @@ li {
 .recruit-btn {
   display: inline-block;
   padding: 1em 4em;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(97, 0, 94, 0.3);
+  box-shadow: 0 4px 15px rgba(74, 135, 28, 0.3);
 }
 
 .recruit-btn:hover {
-  background: linear-gradient(135deg, #9600d7 0%, #61005e 100%);
+  background: linear-gradient(135deg, #6db025 0%, #4a871c 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(97, 0, 94, 0.4);
+  box-shadow: 0 6px 20px rgba(74, 135, 28, 0.4);
 } 
 
 /* ===== CONTACT ===== */
@@ -730,7 +750,7 @@ li {
   display: inline-block;
   margin-top: 1em;
   padding: 0.8em 1.5em;
-  background: linear-gradient(135deg, #9600d7 0% 0%, #61005e 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -849,7 +869,7 @@ small {
 
   .work-text-area h2 {
     font-size: 2em;
-    color: #8e44ad;
+    color: #4a871c;
   }
 
   #work {
@@ -872,11 +892,6 @@ small {
 
   .dream {
     font-size: 2em;
-  }
-
-  .dream::after {
-    width: 100px;
-    height: 3px;
   }
 
   #recruit {
@@ -919,7 +934,7 @@ small {
 
   .recruit-title {
     font-size: 1.8em;
-    color: #8e44ad;
+    color: #4a871c;
   }
 
   .recruit-ja {
@@ -1135,17 +1150,19 @@ small {
   }
 
   #mainview {
-    margin-top: 70px;
+    margin-top: 0;
     min-height: 50vh;
   }
 
   .mv-content-area {
-    left: 38%;
+    left: 40%;
     text-align: left;
+    top: 55%;
   }
 
   .mv-image-area {
     height: 50vh;
+    
   }
 
   .main-title {
@@ -1182,7 +1199,7 @@ small {
 
   .news-en {
     font-size: 2.5em;
-    color: #9600d7;
+    color: #4a871c;
   }
 
   .title-ja {
@@ -1255,7 +1272,7 @@ small {
   .work-text-area h2 {
     font-size: 1.8em;
     margin-top: 0;
-    color: #8e44ad;
+    color: #4a871c;
   }
 
   .work-text {
@@ -1291,16 +1308,11 @@ small {
 
   .c-title {
     font-size: 1.8em;
-    color: #9b59b6;
+    color: #4a871c;
   }
 
   .dream {
     font-size: 1.8em;
-  }
-
-  .dream::after {
-    width: 100%;
-    height: 5px;
   }
 
   .dream-break::after {
@@ -1356,7 +1368,7 @@ small {
 
   .recruit-title {
     font-size: 1.8em;
-    color: #8e44ad;
+    color: #4a871c;
   }
 
   .recruit-ja {
@@ -1383,7 +1395,7 @@ small {
 
   .contact-title {
     font-size: 2em;
-    color: #9b59b6;
+    color: #4a871c;
   }
 
   .contact-ja {
@@ -1591,7 +1603,7 @@ small {
   }
 
   .motivation-item {
-    padding: 1.5em;
+    padding: 1em;
   }
 
   .skills-grid {
@@ -1647,7 +1659,7 @@ small {
 
   .work-text-area h2 {
     font-size: 1.5em;
-    color: #8e44ad;
+    color: #4a871c;
   }
 
   .work-text {
@@ -1670,16 +1682,11 @@ small {
 
   .c-title {
     font-size: 1.2em;
-    color: #9b59b6;
+    color: #4a871c;
   }
 
   .dream {
     font-size: 1.4em;
-  }
-
-  .dream::after {
-    width: 60px;
-    height: 2px;
   }
 
   .dream-break::after {
@@ -1697,7 +1704,7 @@ small {
 
   .contact-title {
     font-size: 1.5em;
-    color: #9b59b6;
+    color: #4a871c;
   }
 
   .contact-text {
@@ -1793,7 +1800,7 @@ small {
 
   .recruit-title {
     font-size: 1.3em;
-    color: #8e44ad;
+    color: #4a871c;
   }
 
   .recruit-ja {
@@ -1840,12 +1847,12 @@ small {
 }
 
 .breadcrumb a:hover {
-  color: #61005e;
+  color: #4a871c;
 }
 
 /* ページヘッダー */
 .page-header {
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: white;
   padding: 4em 0;
   text-align: center;
@@ -1901,7 +1908,7 @@ small {
 
 .news-category {
   display: inline-block;
-  background-color: #61005e;
+  background-color: #4a871c;
   color: white;
   padding: 0.3em 1em;
   border-radius: 15px;
@@ -1923,7 +1930,7 @@ small {
 }
 
 .news-read-more {
-  color: #61005e;
+  color: #4a871c;
   text-decoration: none;
   font-weight: bold;
   border-bottom: 1px solid transparent;
@@ -1931,7 +1938,7 @@ small {
 }
 
 .news-read-more:hover {
-  border-bottom-color: #61005e;
+  border-bottom-color: #4a871c;
 }
 
 /* ページネーション */
@@ -1958,15 +1965,15 @@ small {
 }
 
 .pagination li a:hover {
-  background-color: #61005e;
+  background-color: #4a871c;
   color: white;
-  border-color: #61005e;
+  border-color: #4a871c;
 }
 
 .pagination .active a {
-  background-color: #61005e;
+  background-color: #4a871c;
   color: white;
-  border-color: #61005e;
+  border-color: #4a871c;
 }
 
 .pagination .disabled span {
@@ -2146,7 +2153,7 @@ small {
   left: 20px;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -2175,7 +2182,7 @@ small {
   left: 0;
   width: 60px;
   height: 3px;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   border-radius: 2px;
 }
 
@@ -2217,7 +2224,7 @@ small {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #61005e;
+  color: #4a871c;
   font-weight: bold;
 }
 
@@ -2228,13 +2235,13 @@ small {
   padding: 1em;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 10px;
-  border-left: 4px solid #61005e;
+  border-left: 4px solid #4a871c;
 }
 
 /* 制作フロー */
 .service-flow {
   padding: 6em 0;
-  background: linear-gradient(135deg, #61005e 0%, #9600d7 100%);
+  background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: white;
 }
 
@@ -2432,9 +2439,9 @@ small {
 
 .filter-btn:hover,
 .filter-btn.active {
-    background-color: #333;
+    background-color: #4a871c;
     color: #fff;
-    border-color: #333;
+    border-color: #4a871c;
 }
 
 /* 制作実績グリッド */
@@ -2529,10 +2536,10 @@ small {
 
 /* ===== WORK LINKS STYLES ===== */
 .work-link {
-  display: inline-block;
-  margin-top: 10px;
+  display: table;
+  margin: 10px auto;
   padding: 8px 16px;
-  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  background: linear-gradient(45deg, #4a871c, #44a08d);
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -2562,4 +2569,391 @@ small {
   opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+  .filter-btn {
+    padding: 10px;
+  }
+}
+
 /* ===== HEADER ===== */
+
+/* ===== ABOUT PAGE STYLES ===== */
+
+/* プロフィールセクション */
+.about-profile {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+}
+
+.about-profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.profile-image {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.profile-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(74, 135, 28, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05);
+}
+
+.profile-image::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 3px solid #4a871c;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: profilePulse 3s ease-in-out infinite;
+}
+
+@keyframes profilePulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.1; }
+}
+
+.profile-content {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4a871c;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.profile-name::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 2px;
+}
+
+.profile-role {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.profile-introduction {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* モチベーションセクション */
+.about-motivation {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.about-motivation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.motivation-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4a871c;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.motivation-title::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 2px;
+}
+
+.motivation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.motivation-item {
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.motivation-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(74, 135, 28, 0.15);
+}
+
+.motivation-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 20px 20px 0 0;
+}
+
+.motivation-subtitle {
+  font-size: 1.5rem;
+  color: #4a871c;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.motivation-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* スキルセクション */
+.about-skills {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%);
+}
+
+.about-skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4a871c;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.skills-title::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.skill-category {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(74, 135, 28, 0.15);
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 20px 20px 0 0;
+}
+
+.skill-category-title {
+  font-size: 1.3rem;
+  color: #4a871c;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+.skill-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #4a871c;
+  font-weight: bold;
+}
+
+.skill-list li:hover {
+  color: #4a871c;
+}
+
+/* ライフスタイルセクション */
+.about-lifestyle {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.about-lifestyle-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.lifestyle-title {
+  font-size: 2.5rem;
+  color: #4a871c;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.lifestyle-title::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 2px;
+}
+
+.lifestyle-content {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.lifestyle-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #4a871c, #6db025);
+  border-radius: 20px 20px 0 0;
+}
+
+.lifestyle-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: left;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .about-profile-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+  }
+  
+  .motivation-title,
+  .skills-title,
+  .lifestyle-title {
+    font-size: 2rem;
+  }
+  
+  .motivation-item,
+  .skill-category,
+  .lifestyle-content {
+    padding: 30px 20px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .about-profile,
+  .about-motivation,
+  .about-skills,
+  .about-lifestyle {
+    padding: 60px 0;
+  }
+  
+  .profile-name {
+    font-size: 1.8rem;
+  }
+  
+  .motivation-title,
+  .skills-title,
+  .lifestyle-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+}
