@@ -1614,8 +1614,8 @@ small {
 
 /* 超小型デバイス用（最大幅: 380px） */
 @media screen and (max-width: 380px) {
-  .main-title {
-    font-size: 1.5em;
+  .logo .site-title a {
+    font-size: 1.5rem;
   }
 
   .main-text {
@@ -1625,6 +1625,14 @@ small {
   .mv-btn {
     font-size: 0.9em;
     padding: 0.6em 1.2em;
+  }
+
+  .mv-content-area {
+    top: 65%;
+  }
+
+  .mv-content-area .main-title {
+    font-size: 2.3rem;
   }
 
   .news-wrapper {
@@ -2447,7 +2455,7 @@ small {
 /* 制作実績グリッド */
 .works-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     margin-bottom: 60px;
 }
@@ -2955,5 +2963,105 @@ small {
   .lifestyle-title {
     font-size: 1.8rem;
     margin-bottom: 40px;
+  }
+}
+
+/* ===== 380px以下での横ずれ修正 ===== */
+@media (max-width: 380px) {
+  /* works-gridの横ずれ修正 */
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .work-item {
+    margin: 0 10px;
+  }
+  
+  .work-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .work-info {
+    padding: 15px;
+  }
+  
+  .work-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .work-category {
+    font-size: 0.8rem;
+  }
+  
+  .work-date {
+    font-size: 0.8rem;
+  }
+  
+  .work-link {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+  
+  /* works-list-containerの余白調整 */
+  .works-list-container {
+    padding: 0 15px;
+  }
+  
+  .works-list-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .works-list-description {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  /* フィルターボタンの調整 */
+  .works-filter {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .filter-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    min-width: auto;
+  }
+  
+  /* paginationの調整 */
+  .pagination {
+    margin-top: 30px;
+  }
+  
+  .pagination-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    margin: 0 4px;
+  }
+  
+  /* 全体のコンテナ調整 */
+  .works-list {
+    padding: 40px 0;
+  }
+  
+  /* work-overlayの調整 */
+  .work-overlay-content h3 {
+    font-size: 1rem;
+  }
+  
+  .work-overlay-content p {
+    font-size: 0.8rem;
+  }
+  
+  .work-detail-btn {
+    font-size: 0.8rem;
+    padding: 8px 15px;
   }
 }
