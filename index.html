@@ -20,10 +20,33 @@
         <li><a href="service.html">SERVICE</a></li>
         <li><a href="work.html">WORKS</a></li>
         <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#recruit">RECRUIT</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
       </div>
+      
+      <!-- ハンバーガーメニューボタン -->
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="work.html">WORKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#recruit">RECRUIT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
 
     <div id="mainview">
       <div class="mv-image-area">
@@ -38,6 +61,7 @@
 
     <main>
       <section id="news">
+        <div class="news-wrapper">
         <div class="sec-title-news">
           <h2 class="news-en">NEWS</h2>
           <p class="ja">お知らせ</p>
@@ -45,18 +69,19 @@
 
         <dl>
           <dt>2030.06.01<a class="btn" href="#">お知らせ</a></dt>
-          <dd>Webデザイナーを1名募集中です！。</dd>
+          <dd>Webデザイナーを1名募集中です！</dd>
           <dt>2030.06.10<a class="btn" href="#">お知らせ</a></dt>
           <dd>john様のWebサイトを制作いたしました。</dd>
           <dt>2030.06.01<a class="btn" href="#">お知らせ</a></dt>
           <dd>サイトを公開しました。</dd>
         </dl>
+        </div>
 
-        <div class="news-more-btn">
+        <!-- <div class="news-more-btn">
           <a href="news.html" class="sv-btn">
             <span>MORE</span>
           </a>
-        </div>
+        </div> -->
       </section>
 
       <section id="service">
@@ -107,16 +132,34 @@
         <div class="company-container">
           <div class="company-content">
             <div class="about">
-              <h2 class="c-title">ABOUT</h2>
-              <p class="c-ja">私について</p>
+              <h2 class="c-title">COMPANY</h2>
+              <p class="c-ja">私たちについて</p>
             </div>
-            <h2 class="dream">デザインで人を幸せにしたい</h2>
+            <h2 class="dream">サイトのゴール<span class="dream-break">=</span><span class="dream-second-line">夢を叶えること</span></h2>
             <p class="text-small">
-              Webデザイナーとして、お客様の想いを形にすること。<br>
-              一つ一つのプロジェクトに心を込めて、成果につながるWebサイトを制作します。<br>
-              技術だけでなく、心に響くデザインで皆様の夢の実現をサポートいたします。<br>
+              お客様の夢を叶えること。<br>
+              それがWebサイトのゴールであり、<br>
+              私たちの目指すことです。<br>
+              だからこそちゃんと成果を出すサイトを<br>
+              全力でお作りします。<br>
+              お客様の笑顔を見たい。<br>
+              夢を実現する手助けをさせてください。
             </p>
             <a href="about.html" class="c-btn">MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="recruit">
+        <div class="big">
+          <div class="r-left">
+            <h2 class="recruit-title">RECRUIT</h2>
+            <p class="recruit-ja">採用情報</p>
+            <p class="recruit-text">私たちと一緒に働きませんか？</p>
+            <a href="recruit.html" class="recruit-btn">MORE</a>
+          </div>
+          <div class="r-right">
+            <img src="img/AdobeStock_366186684.jpg" alt="採用情報">
           </div>
         </div>
       </section>
@@ -135,15 +178,17 @@
   <div class="footer-list">
     <ul>
       <li><a href="index.html">HOME</a></li>
-      <li><a href="#news">NEWS</a></li>
-      <li><a href="#service">SERVICE</a></li>
-      <li><a href="#work">WORKS</a></li>
-      <li><a href="#about">ABOUT</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="work.html">WORKS</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="recruit.html">RECRUIT</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
   <small>design for ユウキ</small>
 </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
