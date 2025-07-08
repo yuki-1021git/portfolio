@@ -314,8 +314,8 @@ li {
 }
 
 .main-text .filter {
-  filter: blur(2px);
-  opacity: 0.5;
+  filter: blur(1.5px);
+  opacity: 0.7;
   font-size: 1.8rem;
 }
 
@@ -1155,8 +1155,7 @@ small {
   }
 
   .mv-content-area {
-    left: 40%;
-    text-align: left;
+    text-align: center;
     top: 55%;
   }
 
@@ -1173,8 +1172,9 @@ small {
 
   .main-text {
     font-size: 1em;
-    white-space: normal;
+    white-space: nowrap;
     line-height: 1.4;
+    margin-bottom: 0.5em;
   }
 
   .mv-btn {
@@ -2655,7 +2655,7 @@ small {
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 80px;
+  width: 100%;
   height: 4px;
   background: linear-gradient(90deg, #4a871c, #6db025);
   border-radius: 2px;
@@ -2694,7 +2694,7 @@ small {
   position: relative;
 }
 
-.motivation-title::before {
+/* .motivation-title::before {
   content: '';
   position: absolute;
   top: -20px;
@@ -2704,7 +2704,7 @@ small {
   height: 4px;
   background: linear-gradient(90deg, #4a871c, #6db025);
   border-radius: 2px;
-}
+} */
 
 .motivation-content {
   display: flex;
@@ -2770,7 +2770,7 @@ small {
   position: relative;
 }
 
-.skills-title::before {
+/* .skills-title::before {
   content: '';
   position: absolute;
   top: -20px;
@@ -2780,7 +2780,7 @@ small {
   height: 4px;
   background: linear-gradient(90deg, #4a871c, #6db025);
   border-radius: 2px;
-}
+} */
 
 .skills-grid {
   display: grid;
@@ -2802,7 +2802,7 @@ small {
   box-shadow: 0 20px 40px rgba(74, 135, 28, 0.15);
 }
 
-.skill-category::before {
+/* .skill-category::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2811,7 +2811,7 @@ small {
   height: 6px;
   background: linear-gradient(90deg, #4a871c, #6db025);
   border-radius: 20px 20px 0 0;
-}
+} */
 
 .skill-category-title {
   font-size: 1.3rem;
@@ -2947,6 +2947,10 @@ small {
 
 
 @media (max-width: 480px) {
+  .mv-content-area .main-title {
+    font-size: 2.5rem;
+  }
+
   .about-profile,
   .about-motivation,
   .about-skills,
@@ -2968,6 +2972,20 @@ small {
 
 /* ===== 380px以下での横ずれ修正 ===== */
 @media (max-width: 380px) {
+  .mv-content-area .main-title {
+    font-size: 1.8rem;
+  }
+
+  .main-text .default {
+    font-size: 1.3rem;
+  }
+
+  .main-text .filter {
+    filter: blur(1px);
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+
   /* works-gridの横ずれ修正 */
   .works-grid {
     grid-template-columns: 1fr;
