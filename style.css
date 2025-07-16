@@ -725,7 +725,7 @@ li {
 
 /* ===== CONTACT ===== */
 #contact {
-  padding: 5em 18em;
+  margin-top: 7em;
 }
 
 .contact-frame {
@@ -749,13 +749,13 @@ li {
 .contact-btn {
   display: inline-block;
   margin-top: 1em;
-  padding: 0.8em 1.5em;
+  padding: 1.2em 1.5em;
   background: linear-gradient(135deg, #4a871c 0%, #6db025 100%);
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
-  width: 180px;
+  width: 17%;
   text-align: center;
 }
 
